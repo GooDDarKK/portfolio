@@ -1,0 +1,158 @@
+@media screen and (max-width: 451px) {
+  /* Navbar */
+  nav ul {
+    width: 70%;
+    height: calc(100vh - 60px);
+    position: fixed;
+    bottom: 0;
+    right: -100%;
+    flex-direction: column;
+    background: #000;
+    justify-content: space-evenly;
+    align-items: center;
+    color: gold;
+    transition: 0.6s;
+    z-index: 3;
+  }
+  nav ul.active {
+    right: 0;
+    bottom: 0;
+  }
+  nav ul li:hover .line {
+    width: 100%;
+  }
+  nav ul li:focus .line {
+    width: 100%;
+  }
+  nav ul h3 {
+    display: block;
+  }
+  .hamburger {
+    width: 50px;
+    height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .bar {
+    width: 35px;
+    height: 3px;
+    position: relative;
+    background: #fff;
+    transition: 0.8s;
+  }
+  .bar:after {
+    content: "";
+    width: 35px;
+    height: 3px;
+    background: #fff;
+    top: -10px;
+    position: absolute;
+    transition: 0.8s;
+    transform: rotate(360deg);
+  }
+  .bar:before {
+    content: "";
+    width: 35px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: 10px;
+    transition: 0.8s;
+    transform: rotate(360deg);
+  }
+  .bar.active {
+    background: none;
+  }
+  .bar.active:after {
+    top: 0;
+    transform: rotate(135deg);
+  }
+  .bar.active:before {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+  /* Footer */
+  footer {
+    position: unset;
+  }
+  .messangers {
+    width: 60%;
+  }
+  .messanger {
+    width: 30%;
+    height: 25%;
+    margin: 10px;
+  }
+  .date {
+    width: 70%;
+  }
+  .headermenu {
+    background: url("../img/media_code.jpg");
+    background-size: cover;
+    background-color: rgb(10, 10, 200);
+    background-blend-mode: color-burn;
+    background-position: center;
+  }
+  .headermenu h3 {
+    font-size: 40px;
+    margin-left: 40px;
+    margin-top: 120px;
+  }
+  .headermenu h4 {
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+  .headermenu button {
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+  .about_section {
+    height: 570px;
+  }
+  .about_section .wrapper {
+    width: 95%;
+  }
+  .about_section .wrapper .right .line {
+    margin-top: 3%;
+  }
+  .about_section .wrapper .right button {
+    margin-bottom: 20px;
+  }
+  .contact_section .line {
+    width: 20%;
+  }
+  .contact_section form {
+    width: 100%;
+  }
+
+  /* About page ===== */
+  .know_level .wrapper {
+    width: 95%;
+  }
+  .know_level .wrapper h3 {
+    width: 100%;
+  }
+  .know_level .wrapper .languages {
+    padding: 0px;
+  }
+
+  /* Contact page ===== */
+  .contact_page .messenger_section .contact_messengers {
+    width: 100%;
+  }
+  .contact_page .messenger_section .contact_messengers .account_image {
+    width: 80px;
+    height: 80px;
+    margin-left: 8%;
+  }
+  .contact_page .messenger_section .contact_messengers h4 {
+    margin-top: 18%;
+    margin-left: -200px;
+  }
+  .contact_page .messenger_section .contact_messengers .messanger {
+    margin-top: 30%;
+    margin-left: -130px;
+  }
+}
